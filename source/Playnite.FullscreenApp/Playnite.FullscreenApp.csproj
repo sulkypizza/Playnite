@@ -344,6 +344,9 @@
     <None Include="Themes\Fullscreen\Default\DescriptionView.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Themes\Fullscreen\Default\Images\swap_speaker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Themes\Fullscreen\Default\Views\FiltersAdditional.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
