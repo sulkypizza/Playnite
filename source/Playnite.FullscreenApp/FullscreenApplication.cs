@@ -355,7 +355,7 @@ namespace Playnite.FullscreenApp
 
             try
             {
-                Audio = new AudioEngine();
+                //Audio = new AudioEngine();
             }
             catch (Exception e)
             {
