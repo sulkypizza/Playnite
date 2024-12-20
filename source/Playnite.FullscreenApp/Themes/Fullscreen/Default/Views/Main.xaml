@@ -109,10 +109,20 @@
                                     </Button.Style>
                                 </ButtonEx>
 
+                                <ButtonEx x:Name="PART_ButtonAudioSwap" VerticalAlignment="Center"
+                                     Style="{DynamicResource ButtonTopMenu}"
+                                     Margin="10,0,10,0" Height="48" MinWidth="48"
+                                     Grid.Column="7">
+                                    <Button.Content>
+                                        <Image RenderOptions.BitmapScalingMode="Fant" Margin="2"
+                                        Source="{ThemeFile 'Images/swap_speaker.png'}" />
+                                    </Button.Content>
+                                </ButtonEx>
+
                                 <ButtonEx x:Name="PART_ButtonMainMenu" VerticalAlignment="Center"
                                           Style="{DynamicResource ButtonTopMenu}"
                                           Margin="10,0,10,0" Height="48" MinWidth="48"
-                                          Grid.Column="7">
+                                          Grid.Column="8">
                                     <Button.Content>
                                         <Image RenderOptions.BitmapScalingMode="Fant" Margin="2"
                                            Source="{ThemeFile 'Images/applogo_clean.png'}" />

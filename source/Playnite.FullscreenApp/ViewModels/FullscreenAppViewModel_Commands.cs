@@ -19,6 +19,7 @@ namespace Playnite.FullscreenApp.ViewModels
         public RelayCommand<EventArgs> WindowGotFocusCommand { get; private set; }
         public RelayCommand<object> ToggleFullscreenCommand { get; private set; }
         public RelayCommand<object> OpenMainMenuCommand { get; private set; }
+        public RelayCommand<object> OpenAudioSwapCommand { get; private set; }
         public RelayCommand<object> OpenNotificationsMenuCommand { get; private set; }
         public RelayCommand OpenGameMenuCommand { get; private set; }
         public RelayCommand<object> ToggleGameDetailsCommand { get; private set; }
@@ -330,6 +331,8 @@ namespace Playnite.FullscreenApp.ViewModels
             {
                 OnFileDropped(args);
             });
+
+            OpenAudioSwapCommand = new RelayCommand<object>((_) => OpenAudioSwap());
 
             OpenMainMenuCommand = new RelayCommand<object>((_) => OpenMainMenu());
             OpenNotificationsMenuCommand = new RelayCommand<object>((_) => OpenNotificationsMenu());

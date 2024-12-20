@@ -638,6 +638,14 @@ namespace Playnite.FullscreenApp.ViewModels
             WindowManager.SetEnableMouseInput(!AppSettings.Fullscreen.HideMouserCursor);
         }
 
+        public void OpenAudioSwap()
+        {
+            var vm = new AudioSwapViewModel(new AudioSwapWindowFactory());
+            vm.OpenView();
+            GameListFocused = false;
+            GameListFocused = true;
+        }
+
         public void OpenMainMenu()
         {
             var vm = new MainMenuViewModel(new MainMenuWindowFactory(), this);

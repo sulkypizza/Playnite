@@ -54,6 +54,7 @@ namespace Playnite.FullscreenApp.Controls.Views
         private FrameworkElement ViewHost;
         private FrameworkElement MainHost;
         private ButtonBase ButtonMainMenu;
+        private ButtonBase ButtonAudioSwap;
         private ButtonBase ButtonNotifications;
         private ButtonBase ButtonProgramUpdate;
         private TextBlock TextClock;
@@ -255,9 +256,11 @@ namespace Playnite.FullscreenApp.Controls.Views
 
                 AssignButtonWithCommand(ref ButtonProgramUpdate, "PART_ButtonProgramUpdate", mainModel.OpenUpdatesCommand);
                 AssignButtonWithCommand(ref ButtonMainMenu, "PART_ButtonMainMenu", mainModel.OpenMainMenuCommand);
+                AssignButtonWithCommand(ref ButtonAudioSwap, "PART_ButtonAudioSwap", mainModel.OpenAudioSwapCommand);
                 AssignButtonWithCommand(ref ButtonNotifications, "PART_ButtonNotifications", mainModel.OpenNotificationsMenuCommand);
                 if (ButtonProgramUpdate != null) AutomationProperties.SetName(ButtonProgramUpdate, LOC.UpdateIsAvailableNotificationBody.GetLocalized());
                 if (ButtonMainMenu != null) AutomationProperties.SetName(ButtonMainMenu, LOC.ApplicationMenu.GetLocalized());
+                if (ButtonAudioSwap != null) AutomationProperties.SetName(ButtonAudioSwap, "LOCAudioSwap".GetLocalized());
                 if (ButtonNotifications != null) AutomationProperties.SetName(ButtonNotifications, LOC.Notifications.GetLocalized());
 
                 if (ButtonProgramUpdate != null)
