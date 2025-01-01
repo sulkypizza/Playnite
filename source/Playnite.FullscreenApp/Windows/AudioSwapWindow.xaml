@@ -38,7 +38,7 @@
 
             <Border Grid.Column="1" Grid.Row="1"
         KeyboardNavigation.TabNavigation="Cycle"
-        KeyboardNavigation.DirectionalNavigation="Cycle"
+        KeyboardNavigation.DirectionalNavigation="Continue"
         Style="{DynamicResource MainMenuBorder}">
                 <StackPanel x:Name="PART_StackPanel">
                     <StackPanel.Resources>
@@ -48,6 +48,12 @@
                     <TextBlock FontSize="50" Foreground="White" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center" Focusable="False">Set Audio Output</TextBlock>
                 </StackPanel>
             </Border>
+
+
+            <pctrls:ButtonEx Grid.Column="2" Grid.Row="0" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Width="40" Height="40" Margin="-20" 
+                             Background="#04224f" BorderThickness="2" BorderBrush="#103163" Command="{Binding CloseCommand}" Focusable="True">
+                <TextBlock FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Padding="5,0,5,5">X</TextBlock>
+            </pctrls:ButtonEx>
         </Grid>
     </Viewbox>
 </WindowBase>
