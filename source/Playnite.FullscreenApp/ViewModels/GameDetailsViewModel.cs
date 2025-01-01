@@ -1,4 +1,5 @@
 ﻿using Playnite.Commands;
+using Playnite.FullscreenApp.Windows;
 using Playnite.SDK;
 using Playnite.SDK.Models;
 using System;
@@ -117,6 +118,7 @@ namespace Playnite.FullscreenApp.ViewModels
                 }
                 else if (Game?.IsInstalled == true)
                 {
+                    WindowTools.MoveCursorToEdge();
                     gamesEditor.PlayGame(Game.Game, true);
                 }
             });

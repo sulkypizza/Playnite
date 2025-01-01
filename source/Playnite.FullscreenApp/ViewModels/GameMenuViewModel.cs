@@ -127,6 +127,7 @@ namespace Playnite.FullscreenApp.ViewModels
         public void StartGame()
         {
             Close();
+            WindowTools.MoveCursorToEdge();
             gamesEditor.PlayGame(Game, true);
         }
 

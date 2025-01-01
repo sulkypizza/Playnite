@@ -1,4 +1,5 @@
 ﻿using Playnite.Database;
+using Playnite.FullscreenApp.Windows;
 using Playnite.SDK;
 using Playnite.SDK.Models;
 using Playnite.Windows;
@@ -239,6 +240,7 @@ namespace Playnite.FullscreenApp.ViewModels
             {
                 if (SelectedGame?.IsInstalled == true)
                 {
+                    WindowTools.MoveCursorToEdge();
                     GamesEditor.PlayGame(SelectedGame.Game, true);
                 }
                 else if (SelectedGame?.IsInstalled == false)

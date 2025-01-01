@@ -92,6 +92,7 @@ namespace Playnite.FullscreenApp.ViewModels
             model.OpenView();
             if (model.SelectedAction == RandomGameSelectAction.Play)
             {
+                WindowTools.MoveCursorToEdge();
                 MainModel.SelectGame(model.SelectedGame.Id);
                 MainModel.GamesEditor.PlayGame(model.SelectedGame, true);
             }

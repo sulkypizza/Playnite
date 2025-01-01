@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Forms;
 
 namespace Playnite.FullscreenApp.Windows
 {
@@ -22,6 +23,12 @@ namespace Playnite.FullscreenApp.Windows
                     mainGrid.Width = model.ViewportWidth;
                 }
             }
+        }
+
+        public static void MoveCursorToEdge()
+        {
+            Cursor.Position = new System.Drawing.Point((int)Screen.PrimaryScreen.Bounds.Width, 
+                0);
         }
     }
 }
