@@ -1,5 +1,11 @@
-
 # <img src="https://playnite.link/applogo.png" width="32">  Playnite [![Crowdin](https://badges.crowdin.net/playnite/localized.svg)](https://crowdin.com/project/playnite)
+
+Current Tweaks From The Base Repository
+---------
+* Added a menu on the fullscreen app to change the default audio output device easily.
+* Disabled the audio engine on fulscreen app so the computer will go into sleep mode.
+* When launching a game in fulscreen mode, move the mouse cursor to the top right corner of the screen.
+
 An open source video game library manager and launcher with support for 3rd party libraries like Steam, Epic, GOG, EA App, Battle.net and [others](https://playnite.link/addons.html). Includes game emulation support, providing one unified interface for your games.
 
 Screenshots are available at the [Homepage](http://playnite.link/)
